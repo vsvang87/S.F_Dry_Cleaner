@@ -1,0 +1,92 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Lato:ital,wght@0,400;1,300;1,400&family=Montserrat:wght@200&family=PT+Sans&family=Quicksand:wght@500&family=Roboto:wght@300&family=Spline+Sans:wght@300&display=swap");
+:root {
+  --first-color: #1a2639;
+  --second-color: #3e4a61;
+  --third-color: #c24d2c;
+  --fourth-color: #d9dad7;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+/* BG Image */
+.bg-image {
+  background-image: url(/image/IMG_3826.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+/* Shop Name */
+.title__container {
+  background-color: var(--fourth-color);
+  min-height: 55vh;
+  padding-bottom: 1.2rem;
+}
+.title__container h1 {
+  font-size: 3rem;
+  color: var(--third-color);
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 6rem;
+}
+.pickup__dropoff {
+  display: block;
+  text-align: center;
+  padding: 1.5rem 2.2rem 0 0;
+}
+
+.dropoff__cost {
+  padding-right: 2.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+/*Navbar*/
+header {
+  background-color: var(--first-color);
+  position: sticky;
+  top: 0;
+}
+.container {
+  width: min(90%, 70.5rem);
+  margin-inline: auto;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar .nav__links li {
+  list-style: none;
+  padding: 1.5rem;
+}
+.navbar .nav__links li a {
+  color: var(--fourth-color);
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+.navbar .nav__links li a:hover {
+  color: var(--third-color);
+}
+/* Logo */
+.logo {
+  color: var(--third-color);
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
