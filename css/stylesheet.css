@@ -144,11 +144,12 @@ header {
 
 /* About Page */
 .bg__img {
-  background-image: url(/image/IMG_3592.JPG);
+  background-image: url(/image/IMG_3831.JPG);
   height: 50vh;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 1rem;
 }
 .address__phone__container {
   background-color: var(--fourth-color);
@@ -163,6 +164,7 @@ header {
 .about__us__container h1 {
   padding: 2rem 0;
   text-align: center;
+  color: var(--third-color);
 }
 .info__container {
   display: flex;
@@ -180,5 +182,45 @@ header {
   }
   .address__phone {
     padding: 1rem 0;
+  }
+}
+
+/* Service Page */
+.bg__img__container {
+  height: 50vh;
+  background-image: url(/image/IMG_3592.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service__info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 2rem 0;
+  margin: 1rem 0;
+}
+.service__info__container {
+  padding: 1rem 1rem;
+  margin: 0.7rem 1rem;
+  background-color: var(--fourth-color);
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.service__info__container h3 {
+  padding-bottom: 3rem;
+}
+.one {
+  flex: 4;
+}
+.two {
+  flex: 4;
+}
+.three {
+  flex: 4;
+}
+@media (max-width: 1230px) {
+  .service__info {
+    flex-direction: column;
   }
 }
